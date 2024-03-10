@@ -4,7 +4,7 @@ import {useEffect, useRef, useState} from "react";
 
 const interval_time = 324; //approx 185 bpm
 const spinFrames = ["f", "l", "b", "r"]
-    .map(dir => `./spin/spin_${dir}.png`)
+    .map(dir => `./spin/small/spin_${dir}.png`)
 
 const music = new Audio("./eggbug_loop.ogg")
 music.loop = true
