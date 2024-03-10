@@ -9,7 +9,7 @@ const spinFrames = ["f", "l", "b", "r"]
 const music = new Audio("./eggbug_loop.ogg")
 music.loop = true
 
-const bubblePath = (name) => `./speech/${name}.png`
+const bubblePath = (name) => `./speech/small/${name}.png`
 const bubbles = [
     {
         path: bubblePath("think"),
