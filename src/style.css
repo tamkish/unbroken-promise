@@ -1,82 +1,40 @@
-:root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
+/*
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap')
+*/
 
-	color: #222;
-	background-color: #ffffff;
-
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%;
-}
 
 body {
-	margin: 0;
-	display: flex;
-	align-items: center;
-	min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #202020;
 }
-
 #app {
-	max-width: 1280px;
-	margin: 0 auto;
-	text-align: center;
+    position: relative;
+    text-align: center;
 }
+.spinboy {
 
-img {
-	margin-bottom: 1.5rem;
+    width: 300px; /* Adjust size as needed */
+    height: auto;
 }
-
-img:hover {
-	filter: drop-shadow(0 0 2em #673ab8aa);
+.bubble {
+    position: absolute;
+    top:  0px; /* Adjust offset as needed */
+    left: 300px; /* Adjust offset as needed */
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    z-index: 1;
 }
+.text {
+    font-family: "Caveat Brush", cursive;
+    position: absolute;
+    transform: translate(200%, -200%);
+    z-index: 2;
+    color: white;
+    font-size: 24px; /* Adjust font size as needed */
 
-section {
-	margin-top: 5rem;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	column-gap: 1.5rem;
-}
-
-.resource {
-	padding: 0.75rem 1.5rem;
-	border-radius: 0.5rem;
-	text-align: left;
-	text-decoration: none;
-	color: #222;
-	background-color: #f1f1f1;
-	border: 1px solid transparent;
-}
-
-.resource:hover {
-	border: 1px solid #000;
-	box-shadow: 0 25px 50px -12px #673ab888;
-}
-
-@media (max-width: 639px) {
-	#app {
-		margin: 2rem;
-	}
-	section {
-		margin-top: 5rem;
-		grid-template-columns: 1fr;
-		row-gap: 1rem;
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		color: #ccc;
-		background-color: #1a1a1a;
-	}
-	.resource {
-		color: #ccc;
-		background-color: #161616;
-	}
-	.resource:hover {
-		border: 1px solid #bbb;
-	}
 }

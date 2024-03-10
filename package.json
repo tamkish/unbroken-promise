@@ -7,7 +7,9 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"preact": "^10.13.1"
+		"howler": "^2.2.4",
+		"preact": "^10.13.1",
+		"preact-hooks": "^0.0.0-0.0.0"
 	},
 	"devDependencies": {
 		"@preact/preset-vite": "^2.5.0",
